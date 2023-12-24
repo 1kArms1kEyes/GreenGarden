@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Categorias">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/categorias"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="183dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="307dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="284dp"
+        android:backgroundTint="#459621"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/imageView" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/black"
+        android:text="Regresar"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="@id/imageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

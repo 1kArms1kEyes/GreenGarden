@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/principal" />
+
+    <Button
+        android:id="@+id/btnEstadisticas"
+        android:layout_width="248dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#459621"
+
+        android:text="Estadisticas"
+        app:layout_constraintEnd_toEndOf="@id/imageView5"
+        app:layout_constraintTop_toBottomOf="@id/btnCategorias" />
+
+    <Button
+        android:id="@+id/btnCategorias"
+        android:layout_width="248dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#459621"
+        android:text="Categorias"
+        app:layout_constraintEnd_toEndOf="@id/imageView5"
+        app:layout_constraintTop_toTopOf="@id/imageView5" />
+
+    <Button
+        android:id="@+id/btnConsejos"
+        android:layout_width="248dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#459621"
+        android:text="Consejos"
+        app:layout_constraintEnd_toEndOf="@id/imageView5"
+        app:layout_constraintTop_toBottomOf="@id/btnEstadisticas" />
+</androidx.constraintlayout.widget.ConstraintLayout>
